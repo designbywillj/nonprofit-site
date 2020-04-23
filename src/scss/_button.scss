@@ -1,0 +1,20 @@
+.button {
+    display: block;
+    width: auto;
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+    &--light {
+        background-color: $color--white;
+        color: $color--black;
+    }
+
+    &--dark {
+        background-color: $color--black;
+        color: $color--white;
+    }
+}

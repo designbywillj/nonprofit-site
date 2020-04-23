@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@700&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+button,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  color: #000000;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background-color: #FFFFFF; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+input,
+button {
+  outline: none !important; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 4rem; }
+  @media (min-width: 960px) {
+    h1 {
+      font-size: 6rem; } }
+
+h2 {
+  font-size: 2.5rem; }
+  @media (min-width: 960px) {
+    h2 {
+      font-size: 3rem; } }
+
+p {
+  line-height: 1.5; }
+
+html {
+  font-family: "Inter", sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif; } }
+
+h1, h2 {
+  font-family: 'BenchNine';
+  text-transform: uppercase;
+  letter-spacing: -0.02222em;
+  line-height: 1; }
+
+.button {
+  display: block;
+  width: auto;
+  padding: 0 1.5rem;
+  line-height: 3rem;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem; }
+  .button--light {
+    background-color: #FFFFFF;
+    color: #000000; }
+  .button--dark {
+    background-color: #000000;
+    color: #FFFFFF; }
+
+.header {
+  padding: 1rem 1.5rem; }
+  @media (min-width: 960px) {
+    .header {
+      padding: 2rem; } }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; }
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 960px) {
+    .nav {
+      justify-content: unset; } }
+  .nav__logo {
+    margin-right: 0; }
+    @media (min-width: 960px) {
+      .nav__logo {
+        margin-right: 4rem; } }
+  .nav__group {
+    display: flex; }
+  .nav__item {
+    display: block;
+    margin-right: 1.5rem;
+    font-family: "BenchNine", sans-serif;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    text-decoration: none;
+    white-space: nowrap; }
+    @media (min-width: 960px) {
+      .nav__item {
+        font-size: 1.5rem;
+        margin-right: 3rem; } }
+    .nav__item:last-child {
+      margin-right: 0; }
+  .nav__button {
+    display: none; }
+    @media (min-width: 960px) {
+      .nav__button {
+        display: block; } }
+
+.hero {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), url("src/img/hero.jpg");
+  background-size: cover;
+  background-position: center; }
+  @media (min-width: 960px) {
+    .hero {
+      padding: 8rem 2rem; } }
+  .hero__content {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .hero__title {
+    max-width: 900px;
+    margin-bottom: 3rem;
+    color: #FFFFFF; }
+  .hero__button {
+    display: inline-block; }
+
+.section {
+  padding: 4rem 1.5rem; }
+  @media (min-width: 960px) {
+    .section {
+      padding: 6rem 2rem; } }
+  .section:nth-child(odd) {
+    background-color: #FAFAFA; }
+  .section__content {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .section__heading {
+    margin-bottom: 3rem; }
+    @media (min-width: 960px) {
+      .section__heading {
+        margin-bottom: 4rem; } }
+  .section__title {
+    max-width: 900px; }
+  .section__description {
+    max-width: 600px;
+    margin-top: 1.5rem; }
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -3rem; }
+  .mission__item {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem; }
+    @media (min-width: 960px) {
+      .mission__item {
+        flex: 0 0 auto; } }
+  .mission__thumbnail {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4rem; }
+  .mission__title {
+    font-family: "BenchNine", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; }
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 1.5rem; }
+  @media (min-width: 960px) {
+    .news {
+      grid-template-columns: repeat(6, 1fr); } }
+  @media (min-width: 960px) {
+    .news__item {
+      grid-column: span 2; }
+      .news__item--feature {
+        grid-column: span 3; } }
+  .news__thumbnail {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem; }
+  .news__tag {
+    margin-bottom: 0.5rem;
+    color: #808080;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .news__title {
+    font-family: "BenchNine", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+.how-you-can-help {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 1.5rem; }
+  @media (min-width: 960px) {
+    .how-you-can-help {
+      grid-template-columns: repeat(2, 1fr); } }
+  .how-you-can-help__item {
+    display: flex;
+    align-items: flex-start; }
+    @media (min-width: 960px) {
+      .how-you-can-help__item {
+        align-items: center; } }
+  .how-you-can-help__thumbnail {
+    max-width: 5rem;
+    flex: 0 0 5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.5rem; }
+    @media (min-width: 960px) {
+      .how-you-can-help__thumbnail {
+        max-width: unset;
+        flex: 0 0 auto;
+        grid-template-columns: repeat(2, 1fr); } }
+  .how-you-can-help__title {
+    font-family: "BenchNine", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .how-you-can-help__description {
+    margin-top: 0.5rem; }
